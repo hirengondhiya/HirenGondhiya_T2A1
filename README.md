@@ -7,7 +7,7 @@ The following set of questions relate to this RfQ-requirement.
 
 ### Q1
 
-Describe the architecture of a typical Rails application. WC 200-300
+**Describe the architecture of a typical Rails application. WC 200-300**
 
 ---
 
