@@ -8,6 +8,38 @@ Describe the architecture of a typical Rails application. WC 200-300
 
 ---
 
+A typical Ruby on Rails application follows Model, View, Controller (MVC) architecture. MVC is one of many design patterns that provides a well-defined structure for the development of software applications.
+
+ As the name suggests in a typical MVC application there are mainly three important components as described below,
+
+- Model: 
+  
+  In the MVC application Model is responsible for the storage of data and the business logic of the application. A Rails model follows the Active Record design pattern, in which the model is responsible for not only the storage of the data but also interacting with database application for the persistence of the data.
+
+- View:
+
+  In MVC a View is responsible for the representation of information and interaction with the end-user. In rails, application Views are typically hybrid HTML files with some embedded Ruby code. It contains all of the presentation and client-side validation logic. 
+
+- Controller:
+
+  In an MVC application Controller is the glue that binds the Model with Views. Whenever a browser requests a particular URL it is the controller that is responsible for calling the Models to retrieve or store the data and then hand it over to the view for presentation.
+
+The MVC design pattern has many advantages few of them are listed below,
+
+- Maintainability: 
+
+  As explained above an MVC application has different components to deal with different parts of the application logic. This results in the separation of concerns. Due to this a programmer can easily change or update different parts of the application without affecting others.
+
+- Supports Test-Driven Development (TDD):
+
+  Since Model and View are independent of each other the UI logic and Business Logic of an MVC application can be tested independently. This helps in creating independent unit tests which are the foundation of Test Driven Development.
+
+- Parallel Development:
+
+  In an MVC application since UI and Business logic is built separately, it supports parallel development of the application logic by specialist backend and frontend programmers independent of each other.
+
+
+
 # Q2
 
 Identify a database commonly used in web applications (including Rails) and discuss the pros and cons of this database. WC 150-250
