@@ -5,7 +5,7 @@ ACME Corporation is looking for devs with an understanding of Rails.
 The following set of questions relate to this RfQ-requirement.
 ```
 
-### Q1
+## Q1
 
 **Describe the architecture of a typical Rails application. WC 200-300**
 
@@ -43,7 +43,7 @@ The MVC design pattern has many advantages few of them are listed below,
 
 
 
-### Q2
+## Q2
 
 Identify a database commonly used in web applications (including Rails) and discuss the pros and cons of this database. WC 150-250
 
