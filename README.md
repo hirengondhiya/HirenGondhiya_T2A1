@@ -1,8 +1,11 @@
+# T2A1 Workbook - by Hiren Gondhiya
+
 ```
-ACME Corporation is looking for devs with an understanding of Rails. The following set of questions relate to this RfQ-requirement.
+ACME Corporation is looking for devs with an understanding of Rails. 
+The following set of questions relate to this RfQ-requirement.
 ```
 
-# Q1
+### Q1
 
 Describe the architecture of a typical Rails application. WC 200-300
 
@@ -40,7 +43,7 @@ The MVC design pattern has many advantages few of them are listed below,
 
 
 
-# Q2
+### Q2
 
 Identify a database commonly used in web applications (including Rails) and discuss the pros and cons of this database. WC 150-250
 
@@ -50,19 +53,19 @@ Identify a database commonly used in web applications (including Rails) and disc
 ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement.
 ```
 
-# Q3
+## Q3
 
 Discuss the implementation of Agile project management methodology. WC 200-300	
 
 ---
 
-# Q4
+## Q4
 
 Provide an overview and description of a standard source control process. WC 100-200
 
 ---
 
-# Q5
+## Q5
 
 Provide an overview and description of a standard software testing process. WC 100-200
 
@@ -72,19 +75,19 @@ Provide an overview and description of a standard software testing process. WC 1
 Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.
 ```
 
-# Q6
+## Q6
 
 Discuss and analyse requirements related to information system security. WC 100-200
 
 ---
 
-# Q7
+## Q7
 
 Discuss common methods of protecting information and data. WC 100-200
 
 ---
 
-# Q8
+## Q8
 
 Research what your legal obligations are in relation to handling user data. WC 100-200
 
@@ -94,19 +97,19 @@ Research what your legal obligations are in relation to handling user data. WC 1
 ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement.
 ```
 
-# Q9
+## Q9
 
 Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. WC 100-200
 
 ---
 
-# Q10
+## Q10
 
 Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database. WC 100-200
 
 ---
 
-# Q11
+## Q11
 
 Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. WC 100-200
 
@@ -116,13 +119,13 @@ Describe the manipulative aspects of the relational database model. Your descrip
 The efficiency of an app (i.e. site) and the algorithms used are of the utmost importance. The next set of questions relate to this RfQ-requirement.
 ```
 
-# Q12
+## Q12
 
 Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O). WC 300-500
 
 ---
 
-# Q13
+## Q13
 
 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O). WC 300-500
 
@@ -132,7 +135,7 @@ Identify and explain the workings of TWO search algorithms and discuss and compa
 Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.
 ```
 
-# Q14
+## Q14
 
 Conduct research into a marketplace website (app) and answer the following parts:  
   - What software is used by the app?
