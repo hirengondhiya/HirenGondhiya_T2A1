@@ -49,6 +49,25 @@ Identify a database commonly used in web applications (including Rails) and disc
 
 ---
 
+There are plenty of database management systems used for different kind of web applictions. One of the popular open source option is PostgreSQL. 
+
+PostgreSQL is open source database management system. It can be easily used to work with web applications including the ones built using Ruby on Rails.
+
+Below are the advantages and disadvantages of PostgreSQL,
+
+- Advantages
+  - Opensource: As mentioned earlier PostgreSQL is an opensource database with community of dedicated developers who are not only continuously improving and adding new features but also provides detailed documentation on how to work PostgreSQL. This results in very well supported production grade database system with zero licensing costs.
+  - High SQL Compliance: PostgreSQL achieves very high degree of SQL compliance. PostgreSQL implements 160 out of 179 full core SQL:2011 compliant features as well as it also implements a number of optional SQL features.
+  - Customizable: PostgreSQL can be customized based on the needs of the application to support additional custom features.
+  - Very High Data integrity: PostgreSQL implements multiversion concurrency control algorithm to maintain integrity of the stored data. This results in consistent data 
+  - Highly Fault Tolerant: PostgreSQL implements write ahead loging feature. Due to this feature its fault tolerance is very high.
+- Disadvantages
+  - Memory Intensive: PostgreSQL creates a new process for each user connection, which results in a lot of memory requirement when there are thousands of simulataneous user connections made to the database system. Based on popularity and purpose of the web application it can have few hundred to several thousand users connecting to the database to retrieve the information. In this situation it may lead to very high memory usage.
+
+  - Very few management clients: Though PostgreSQL has existed for years it is becoming more popular very recently. Due to the lack consistent interest in PostgreSQL by organizations very few management clients are available to manage PostgreSQL databases.
+  - Learning Curve: Due to a large number features supported by PostgreSQL it requires some learning curve to understand and master installation and configuration of the system.
+
+
 ```
 ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement.
 ```
