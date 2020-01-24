@@ -78,6 +78,21 @@ Discuss the implementation of Agile project management methodology. WC 200-300
 
 ---
 
+Intro to agile.
+Agile Project management is one of the project management which promises faster software development without burning out the project delivery team.
+Agile project management delivers the software in iterative fashion 
+
+menifesto.
+two implementation methodology
+scrum
+
+References:
+ - https://searchcio.techtarget.com/definition/Agile-project-management
+ - https://www.atlassian.com/agile/project-management
+ - https://www.workfront.com/blog/the-beginners-guide-to-agile-project-management-methodology
+ - https://www.pmi.org/learning/library/agile-project-management-scrum-6269
+ - https://www.dummies.com/careers/project-management/agile-project-management-for-dummies-cheat-sheet/
+
 ## Q4
 
 Provide an overview and description of a standard source control process. WC 100-200
@@ -143,12 +158,79 @@ The efficiency of an app (i.e. site) and the algorithms used are of the utmost i
 Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O). WC 300-500
 
 ---
+1. **Bubble Sort**: 
+Bubble sort works by comparing each element of the list to the next element in the list until the list is sorted (no swap required). In this method, on each iteration, the lower value elements of the list bubble up on top of higher value elements and hence it gets the name bubble sort.
+
+    Following pseudo code explains the steps that are required to sort an array of numbers with n number of elements using the Bubble sort algorithm.
+
+    - For index i= 0 to n-1 repeat following steps,
+        - Set value of Swap = false.
+        - For index j = 0 up to n-2-i do the following,
+          - If array[j] > array[j+1] 
+            - swap the elements in order and, 
+            - set the value of the swap to true.
+        - if the value of the swap is still false end the loop.
+
+    Efficiency of Bubble sort:
+  
+    - Best case: Best case scenario for sorting is when the list is already sorted in this case Bubble sort requires one full pass to detect that the array is sorted, that means efficiency in the best case is O(n)
+    - Worst case: In worstcase scenario bubble sort needs to traverse through the list approximately n * n times, that means efficiency in worst case is O(n^2).
+
+2. Merge Sort: 
+
+    Merge Sort is divide and conquer form of algorithm. This algorithm recursively divides the list into halves until each list contains only one item and then recursively merges the divided lists into larger sorted lists until all of the divided lists are merged back into a single sorted list.
+
+    Following pseudo code explains the steps that are required implement Merge sort to sort an array of numbers with n number of elements.
+
+    Method: MergeSort(input: array)
+      - Set length= length of the array
+      - If length > 1
+        - set middle= length/2
+        - divide the array into left and right as
+          - left = array[0..middle]
+          - right = array[middle+1..length-1]
+        - Call merge sort on left and right array to get new sorted left and right array
+          - Call new_left = MergeSort(left)
+          - Call new_right = mergeSort(right)
+        - Merge the sorted left and right array into a sorted array and return it back to the calling method
+      - else
+        - return the array
+
+    Performance: 
+    The efficiency of the Merge sort is O(n Log n)
+
+    Though the merge sort takes the same number of iterations in bestcase or worstcase scenarios, its efficiency value is realiazed when sorting large number of items.
+
+If we compare efficiency of the above two sort algorithms it is evident that in case of lower number of the items in the list the performance of the algorithm would be equivalent however when working with large number of list items Merge sort out performs the bubble sort.
+
 
 ## Q13
 
 Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O). WC 300-500
 
 ---
+
+1. Linear Search:
+
+    Linear search is the simplest and the most intituitive form of search algorithm. Given a list of n items it works by comparing the search item one by one with each of the items in the list in a linear fashion, starting from the first item in the list. The algorithm stops when the item is first time encountered in the list or the end of the list is reached. 
+
+    - **Efficiency:**
+      
+      Using Big O the efficiency of the Linear Search is expresed as O(n).
+
+      Since the algorithm works by searching items one by one in linear fashion, in best case when the search item is found at the first position it requires only one look up operation and in the worst case if the search item is not found or if it's at the last position in the list it takes n look up operations. 
+
+      This implies that in worst case scenario the time taken by algorithm increases as the number of items in the list increases.
+
+2. Binary Search:
+
+    The Binary Search algorithm is another divide and conquer search algorithm. For this algorithm to work it requires a sorted list of items. The algorithm works by looking up for the search item at middle position of the list. If the search item is not found then it recursively looks up for the item in left half of the list if the search item's value is less than the item at the middle position or otherwise it recursively searches for the item in right half of the list. The algorithm keeps dividing the list into halves as described above until the search item is found or when the list can not be divided any further.
+
+     - Efficiency:
+
+        The efficiency of the Binary search in worst case is O(log n). This means that the time taken by the algorithm exponentially reduces as the number of the items in the list increases.
+
+When comparing between the Linear search and the Binary search algorithm, the Binary search performs better when searching in large lists of the items.
 
 ```
 Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.
