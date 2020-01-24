@@ -203,6 +203,14 @@ Bubble sort works by comparing each element of the list to the next element in t
 
 If we compare efficiency of the above two sort algorithms it is evident that in case of lower number of the items in the list the performance of the algorithm would be equivalent however when working with large number of list items Merge sort out performs the bubble sort.
 
+References:
+1. https://www.geeksforgeeks.org/bubble-sort/
+2. https://en.wikipedia.org/wiki/Bubble_sort
+3. https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm
+4. https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/tutorial/
+5. https://en.wikipedia.org/wiki/Merge_sort
+6. 
+
 
 ## Q13
 
@@ -231,6 +239,12 @@ Identify and explain the workings of TWO search algorithms and discuss and compa
         The efficiency of the Binary search in worst case is O(log n). This means that the time taken by the algorithm exponentially reduces as the number of the items in the list increases.
 
 When comparing between the Linear search and the Binary search algorithm, the Binary search performs better when searching in large lists of the items.
+
+References:
+1. https://www.geeksforgeeks.org/linear-search/
+2. https://www.tutorialspoint.com/data_structures_algorithms/linear_search_algorithm.htm
+3. https://www.studytonight.com/data-structures/linear-search-algorithm
+4. https://en.wikipedia.org/wiki/Linear_search
 
 ```
 Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.
