@@ -78,13 +78,29 @@ Discuss the implementation of Agile project management methodology. WC 200-300
 
 ---
 
-Intro to agile.
-Agile Project management is one of the project management which promises faster software development without burning out the project delivery team.
-Agile project management delivers the software in iterative fashion 
+Agile Project management is a way of project delivery in which project is delivered in iterations. At the end of each iteration agile team delivers a working product which can be tested and is improved over previous iteration by adding new features and/or, improving previously delivered features. Due to continuous delivery approach it helps the end client to understand how the end product will look like and the team gets continuous feedback from the customer which leads to realistic understanding of the requirements. In this way the issues and gaps in the requirements are picked up in early stages of the project before they become serious risks to completion of the project.
 
-menifesto.
-two implementation methodology
-scrum
+**Core Values**
+
+As per [Work front - The Beginners’ Guide to Agile Project Management Methodology](https://www.workfront.com/blog/the-beginners-guide-to-agile-project-management-methodology) there are four core values that guides any agile team
+
+1. Individuals and interactions over processes and tools
+
+    The first core value focusses on all the involved stackholders which includes representatives not only from the customer but also whole of the team involved in delivery of the project. As per agile philosophy the humans involved in the project should interact directly in order to quickly solve the issues instead of focusing on formal processes and tools.
+
+2. Working software over comprehensive documentation
+
+    In line with first core value of informal interaction over formal processes, the second value focusses more on delivering a working application over building detailed formal documentation.
+    
+3. Customer collaboration over contract negotiation
+
+    This principle stresses on involvement of customer to make the project delivery successful by meaningful collaboration between the project delivery team and the customer.
+
+4. Responding to change over following a plan
+    
+    This priciple requires the project team to be flexible in responding to the changes instead following a fixed plan that may not be suitable for change in the environment.
+
+There are many different frameworks which follows the core values of agile project management. Two the more popular ones are Scrum and Kanban.
 
 References:
  - https://searchcio.techtarget.com/definition/Agile-project-management
