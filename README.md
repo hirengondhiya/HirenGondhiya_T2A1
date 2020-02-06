@@ -314,7 +314,7 @@ Conduct research into a marketplace website (app) and answer the following parts
 
 - Describe the interaction of technologies within the app
 
-  As explained earlier, Airbnb uses many technologies however different kind of functions performed by these technogies can be divided mainly into four categories
+  As explained earlier, Airbnb uses many technologies however different kind of functions performed by these technogies can be divided mainly into three categories
   
   1. Front End
     Airbnb uses Ruby on Rails MVC framework for its front end as well as backend implementation of the app. Airbnb also has its mobile version of the app for android and ios platform, which is built with React. React essentially is a javascript based front end framework. React native is used to render UI on the screen of the mobile devices. It makes the app platform agnostic since React is ultimately a javascript. Sass is used by React for stying the app. Native navigation is used within React Native apps, to manage presentation of and transition between the screens.
@@ -322,7 +322,3 @@ Conduct research into a marketplace website (app) and answer the following parts
     Nginx allows to serve the Airbab web site and respond to http requests coming to the app. Ruby on rails interacts with MySQL database which stores the user data.
   3. Hosting
      Airbnb uses AWS for its computing needs instead of owning its own physical serers. To run the Rails application and to serve the http requests through Nginx it uses AWS EC2 instances. The MySQL databases are hosted on Amazon RDS instances and the large number of files are stored on Amazon S3.
-  4. Devops
-      Airbab uses some of the dev ops tools to automate some of the tasks.
-
-      For source management it uses git and for hosting repositories it uses github. Webpack is used for bundling (for example compiling react to javascript, sass to css, and various other devops tasks) the React application. Jest is used for quality assurances purposes by making sure the unit tests runs each time some code is committed to the repositories.
