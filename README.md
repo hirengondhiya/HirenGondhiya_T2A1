@@ -306,7 +306,9 @@ Conduct research into a marketplace website (app) and answer the following parts
 
 - What hardware is used by the app?
 
-  As per [AWS case study of Airbnb](https://aws.amazon.com/solutions/case-studies/airbnb-case-study/), most of Airbnb's infrastructure is hosted on [AWS](https://aws.amazon.com/). Due to the huge number of simultaneous customers being served by Airbnb it uses about 200 servers which are nothing but two hundred instances of Amazon EC2. To optimally distribute the requests, coming from the large number of users, among the 200 servers it uses Elasti Load Balancing service provided by AWS. To store the data, generated from various requests, Airbnb uses Amazon RDS, which is a relational database service from AWS. To store various kinds of files for example, backups, pictures of properties and users, etc..., it uses Amazon Simple Storage service which is a kind of cloud file storage service.
+  As per [AWS case study of Airbnb](https://aws.amazon.com/solutions/case-studies/airbnb-case-study/), most of Airbnb's hardware is virtualized and hosted on [AWS](https://aws.amazon.com/). AWS works based on Infrastructure As A Service (IAAS) model. In this model the provider leases its physical computing resources for example servers as a virtual server which can be accessed and managed through internet service.
+  
+  Due to the huge number of simultaneous customers being served by Airbnb it uses about 200 servers which are nothing but two hundred instances of Amazon EC2. To optimally distribute the requests, coming from the large number of users, among the 200 servers it uses Elasti Load Balancing service provided by AWS. To store the data, generated from various requests, Airbnb uses Amazon RDS, which is a relational database service from AWS. To store various kinds of files for example, backups, pictures of properties and users, etc..., it uses Amazon Simple Storage service which is a kind of cloud file storage service.
 
   As per the [AWS case study of Airbnb](https://aws.amazon.com/solutions/case-studies/airbnb-case-study/), most of Airbnb's infrastructure is hosted on [AWS](https://aws.amazon.com/). Due to the huge number of simultaneous customers being served by Airbnb, it uses about 200 servers which are nothing but two hundred instances of Amazon EC2. To optimally distribute the requests, coming from a large number of users, among the 200 servers it uses Elasti Load Balancing service provided by AWS. To store the data, generated from various requests, Airbnb uses Amazon RDS, which is a relational database service from AWS. To store various kinds of files, for example, backups, pictures of properties and users, etc..., it uses Amazon Simple Storage service which is a kind of cloud file storage service.
 
@@ -317,8 +319,18 @@ Conduct research into a marketplace website (app) and answer the following parts
   As explained earlier, Airbnb uses many technologies however different kind of functions performed by these technogies can be divided mainly into three categories
   
   1. Front End
-    Airbnb uses Ruby on Rails MVC framework for its front end as well as backend implementation of the app. Airbnb also has its mobile version of the app for android and ios platform, which is built with React. React essentially is a javascript based front end framework. React native is used to render UI on the screen of the mobile devices. It makes the app platform agnostic since React is ultimately a javascript. Sass is used by React for stying the app. Native navigation is used within React Native apps, to manage presentation of and transition between the screens.
+    
+      Airbnb uses React to implement front end of its website which can be accessed through any web browser.
+
+      Airbnb also has its mobile version of the app for android and ios platform, which is built with React Native. React native is used to render UI on the screen of the mobile devices. It makes the app platform agnostic since React is ultimately a javascript. Sass is used within the for stying the app. Native navigation is used within React Native apps, to manage presentation of and transition between the screens.
+
+      Webpack is used to compile React, Sass code into javascript and css respectively. It is also used to minify the compiled code which helps in faster loading of the site.
+
   2. Backend
-    Nginx allows to serve the Airbab web site and respond to http requests coming to the app. Ruby on rails interacts with MySQL database which stores the user data.
+    
+      Airbnb uses Ruby on Rails to interact with the database and then respond to the data requests made by front end of the app. This way it implements separation of concerns between backend and front end for different platforms.
+
+      Nginx (engine-ex) webserver is used by Airbnb to serve its front end React website  and the Ruby on Rails backend apis.
+
   3. Hosting
-     Airbnb uses AWS for its computing needs instead of owning its own physical serers. To run the Rails application and to serve the http requests through Nginx it uses AWS EC2 instances. The MySQL databases are hosted on Amazon RDS instances and the large number of files are stored on Amazon S3.
+     Airbnb uses AWS for its computing needs instead of owning its own physical servers it uses the servers in AWS datacenters offered through AWS service. To run the Rails application and to serve the http requests through Nginx it uses AWS EC2 instances. The MySQL databases are hosted on Amazon RDS instances and the large number of files are stored on Amazon S3.
