@@ -272,7 +272,7 @@ Conduct research into a marketplace website (app) and answer the following parts
   - What software is used by the app?
   - What hardware is used by the app?
   - Describe the interaction of technologies within the app
-  - Describe the way data is structured within the app
+  - Describe the way data is structured within the app  
   - Identify entities which must be tracked by the app
   - Identify the relationships and associations between the entities you have identified in part (e)
   - Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model).
@@ -281,4 +281,48 @@ Conduct research into a marketplace website (app) and answer the following parts
 
   ---
 
+  I have done research on Airbnb, which as per wikipedia is, "is an online marketplace for arranging or offering lodging, primarily homestays, or tourism experiences". Following answers each part of the question.
+
+- What software is used by the app?
+  As per information on [stackshare](https://stackshare.io/airbnb/airbnb) Airbnb uses a lot of different kind of software application but the most relevant applications to their website are
+    - Javascript
+    - React
+    - React Native
+    - Native Navigation
+    - Sass
+    - CSS
+    - Ruby
+    - Rails
+    - nginx
+    - MySQL
+    - Amazon RDS
+    - Amazon EC2
+    - Amazon S3
+    - GitHub
+    - New Relic
+    - Webpack
+    - Vagrant
+    - Jest
+
+- What hardware is used by the app?
+
+  As per [AWS case study of Airbnb](https://aws.amazon.com/solutions/case-studies/airbnb-case-study/), most of Airbnb's infrastructure is hosted on [AWS](https://aws.amazon.com/). Due to the huge number of simultaneous customers being served by Airbnb it uses about 200 servers which are nothing but two hundred instances of Amazon EC2. To optimally distribute the requests, coming from the large number of users, among the 200 servers it uses Elasti Load Balancing service provided by AWS. To store the data, generated from various requests, Airbnb uses Amazon RDS, which is a relational database service from AWS. To store various kinds of files for example, backups, pictures of properties and users, etc..., it uses Amazon Simple Storage service which is a kind of cloud file storage service.
+
+  As per the [AWS case study of Airbnb](https://aws.amazon.com/solutions/case-studies/airbnb-case-study/), most of Airbnb's infrastructure is hosted on [AWS](https://aws.amazon.com/). Due to the huge number of simultaneous customers being served by Airbnb, it uses about 200 servers which are nothing but two hundred instances of Amazon EC2. To optimally distribute the requests, coming from a large number of users, among the 200 servers it uses Elasti Load Balancing service provided by AWS. To store the data, generated from various requests, Airbnb uses Amazon RDS, which is a relational database service from AWS. To store various kinds of files, for example, backups, pictures of properties and users, etc..., it uses Amazon Simple Storage service which is a kind of cloud file storage service.
+
+  There are many other IAAS services offered by AWS that are used by Airbnb for data analytics, Monitoring, and Operations but above are the core services that are used to host the website.
+
+- Describe the interaction of technologies within the app
+
+  As explained earlier, Airbnb uses many technologies however different kind of functions performed by these technogies can be divided mainly into four categories
   
+  1. Front End
+    Airbnb uses Ruby on Rails MVC framework for its front end as well as backend implementation of the app. Airbnb also has its mobile version of the app for android and ios platform, which is built with React. React essentially is a javascript based front end framework. React native is used to render UI on the screen of the mobile devices. It makes the app platform agnostic since React is ultimately a javascript. Sass is used by React for stying the app. Native navigation is used within React Native apps, to manage presentation of and transition between the screens.
+  2. Backend
+    Nginx allows to serve the Airbab web site and respond to http requests coming to the app. Ruby on rails interacts with MySQL database which stores the user data.
+  3. Hosting
+     Airbnb uses AWS for its computing needs instead of owning its own physical serers. To run the Rails application and to serve the http requests through Nginx it uses AWS EC2 instances. The MySQL databases are hosted on Amazon RDS instances and the large number of files are stored on Amazon S3.
+  4. Devops
+      Airbab uses some of the dev ops tools to automate some of the tasks.
+
+      For source management it uses git and for hosting repositories it uses github. Webpack is used for bundling (for example compiling react to javascript, sass to css, and various other devops tasks) the React application. Jest is used for quality assurances purposes by making sure the unit tests runs each time some code is committed to the repositories.
