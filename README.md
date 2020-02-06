@@ -340,3 +340,43 @@ Conduct research into a marketplace website (app) and answer the following parts
   Airbnb uses MySQL database hosted on Amazon RDS. MySQL is a relational database management system and hence the data in MySQL is structured in form of two dimentional tables similar to the way data is structured in an Excel spreadsheet. Each entity and the relationship between the entities tracked by the Airbnb is stored as table inside the database. Relational database management systems uses SQL (Structured Query Language) to manipulate the data within the tables.
 
   Hosting the the MySQL on Amazon RDS reduces a lot of database adminstration tasks such backup automation, database security setup, Database replication in multiple regions etc..
+
+- Identify entities which must be tracked by the app
+
+  Based on the features provided by Airbnb following entities must be tracked by the app.
+
+  1. User
+
+      To store user login information.
+
+  2. User Profile
+    
+      To store user information such as Name, Gender, Contact details, etc...
+  3. Payment
+
+      To store payment information such as credit cards.
+  4. Property
+    
+      To store Property information such as Address, Features offered, House Rules
+  5. Room
+      
+      To store details of amenities in each room.
+  6. Bed
+      
+      To store different kind of bed details.
+  7. Amenities
+      
+      To store details of common amenities each property offers.
+  8. Property Schedule
+      
+      To store details of period when property is available to lease and the rate for each period.
+  9. Review
+      
+      To store review of the property.
+  10. Booking
+      
+      To store booking information.
+
+  11. Images (User and Property)
+      
+      To store details of the image which can belong to a property or a user.
