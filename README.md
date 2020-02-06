@@ -379,3 +379,32 @@ Conduct research into a marketplace website (app) and answer the following parts
   11. Images (User and Property)
       
       To store details of the image which can belong to a property or a user.
+
+- f) Identify the relationships and associations between the entities you have identified in part (e)
+
+  1. User: 
+      - A User has one User Profile
+
+  2. User Profile
+      - A User Profile belongs to a User entity
+      - A User has many Payment Details
+      - A User has many Properties
+      - A user has one Image (Profile image)
+
+  3. Property
+      - A Property belongs to a User Profile
+      - A Property has many Rooms
+      - A Property has many Amenities
+      - A Property has many Schedules
+      - A Property has many Reviews
+      - A Property has many Bookings
+      - A Property has many Images
+
+  4. Room
+      - A Room belongs to a Property
+      - A Room has many Bed Types
+
+  
+  
+  5. Bed Type
+      - A Bed Type has many Rooms through Bed Types Rooms
