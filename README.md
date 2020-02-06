@@ -334,3 +334,9 @@ Conduct research into a marketplace website (app) and answer the following parts
 
   3. Hosting
      Airbnb uses AWS for its computing needs instead of owning its own physical servers it uses the servers in AWS datacenters offered through AWS service. To run the Rails application and to serve the http requests through Nginx it uses AWS EC2 instances. The MySQL databases are hosted on Amazon RDS instances and the large number of files are stored on Amazon S3.
+
+- Describe the way data is structured within the app
+
+  Airbnb uses MySQL database hosted on Amazon RDS. MySQL is a relational database management system and hence the data in MySQL is structured in form of two dimentional tables similar to the way data is structured in an Excel spreadsheet. Each entity and the relationship between the entities tracked by the Airbnb is stored as table inside the database. Relational database management systems uses SQL (Structured Query Language) to manipulate the data within the tables.
+
+  Hosting the the MySQL on Amazon RDS reduces a lot of database adminstration tasks such backup automation, database security setup, Database replication in multiple regions etc..
