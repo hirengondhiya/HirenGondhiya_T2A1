@@ -366,7 +366,7 @@ Conduct research into a marketplace website (app) and answer the following parts
   7. Amenities
       
       To store details of common amenities each property offers.
-  8. Property Schedule
+  8.  Schedule
       
       To store details of period when property is available to lease and the rate for each period.
   9. Review
@@ -384,27 +384,39 @@ Conduct research into a marketplace website (app) and answer the following parts
 
   1. User: 
       - A User has one User Profile
-
   2. User Profile
       - A User Profile belongs to a User entity
-      - A User has many Payment Details
-      - A User has many Properties
-      - A user has one Image (Profile image)
-
+      - A User Profile has many Payment Details
+      - A User Profile has many Properties
+      - A User Profile has one Image (Profile image)
+      - A User Profile has many reviews (that they have given)
   3. Property
       - A Property belongs to a User Profile
       - A Property has many Rooms
-      - A Property has many Amenities
+      - A Property has many Amenities through AmenitiesProperty join table
       - A Property has many Schedules
       - A Property has many Reviews
       - A Property has many Bookings
       - A Property has many Images
-
   4. Room
       - A Room belongs to a Property
-      - A Room has many Bed Types
+      - A Room has many Beds through BedsRoom join table
+  5. Bed
+      - A Bed has many Rooms through BedsRoom join table
+  6. BedsRoom
+      - A BedsRoom belongs to a Room
+      - A BedsRoom belongs to a Bed
+  7. Amenities
+      - An amenity has many Properties through AmenitiesProperty join table
+  8. Schedule
+      - A Property Schedule belongs to a Property
+  9. Review
+      - A Review belongs to a Booking (that was made for the property)
+  10. Booking
+      - A booking belongs to a Property (the booked property)
+      - A booking belongs to a User (who made the booking)
+      - A booking has a review
+  11. Image
+      - Polymorphic relation with User Profile and Property
+      
 
-  
-  
-  5. Bed Type
-      - A Bed Type has many Rooms through Bed Types Rooms
