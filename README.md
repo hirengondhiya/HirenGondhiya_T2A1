@@ -175,6 +175,25 @@ Discuss and analyse requirements related to information system security. WC 100-
 
 ---
 
+Information System Security is required to protect the software application and the underlying information stored and used by the application from theft, tampering or undesired denial of service to its legitimate users.
+
+The core objectives of Information Systems security is to make sure 
+ - appropriate confidentiality of information is maintained, 
+ - integrity and accuracy of the data governed by information systems is maintained, 
+ - information system availability is maintained based on organizational policy
+
+The common requirements of Information Systems Security are as follows
+
+- Safeguard the Information system and the data used by the system
+- Discover risks associated with Information System and implement appropriate controls to manage the risks.
+- Formulate appropriate strategy, plan of action, quality standards, general principles and best practices to be followed to secure the Information Systems.
+
+
+References:
+- https://en.wikibooks.org/wiki/Fundamentals_of_Information_Systems_Security/Information_Security_and_Risk_Management
+- https://www.temenos.com/wp-content/uploads/2019/07/governance-policy-information-systems-security-2019-jul-03.pdf
+- https://en.wikipedia.org/wiki/Information_security
+
 ## Q7
 
 Discuss common methods of protecting information and data. WC 100-200
