@@ -383,19 +383,17 @@ Conduct research into a marketplace website (app) and answer the following parts
 - f) Identify the relationships and associations between the entities you have identified in part (e)
 
   1. User: 
-      - A User has one User Profile
+      - A User has one User Profile.
   2. User Profile
       - A User Profile belongs to a User entity
-      - A User Profile has many Payment Details
       - A User Profile has many Properties
       - A User Profile has one Image (Profile image)
-      - A User Profile has many reviews (that they have given)
   3. Property
       - A Property belongs to a User Profile
       - A Property has many Rooms
       - A Property has many Amenities through AmenitiesProperty join table
       - A Property has many Schedules
-      - A Property has many Reviews
+      - A Property has many Reviews through Bookings
       - A Property has many Bookings
       - A Property has many Images
   4. Room
@@ -411,7 +409,7 @@ Conduct research into a marketplace website (app) and answer the following parts
   8. Schedule
       - A Property Schedule belongs to a Property
   9. Review
-      - A Review belongs to a Booking (that was made for the property)
+      - A Review belongs to a Property through Booking (that was made for the property)
   10. Booking
       - A booking belongs to a Property (the booked property)
       - A booking belongs to a User (who made the booking)
