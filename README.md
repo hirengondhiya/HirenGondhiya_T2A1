@@ -418,3 +418,6 @@ Conduct research into a marketplace website (app) and answer the following parts
       - Polymorphic relation with User Profile and Property
       
 
+- g) Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model).
+
+![Airbnb ERD Diagram](images/air-bnb-erd.svg)
