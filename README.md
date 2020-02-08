@@ -142,6 +142,29 @@ Provide an overview and description of a standard software testing process. WC 1
 
 ---
 
+Software Testing Process is required to verify that the system performs as per specifications in different kind of scenarios and it also handles unspecified scenarios without crashing.
+
+There are many different approaches, types, levels, techniques of software testing, such as Black box testing, White box testing, Manual Testing, Automated, Unit testing, Integration testing, System testing, Regression Testing, Functional Testing, Non-functional testing, Performance Testing, Accessiblity testing etc.. Based on the budget, Goals of the testing, impact on the business, and the requirements a mix of different approaches and techniques are used for testing.
+
+The most basic testing that is used in modern development is unit testing. Where automated test cases are created by the developer to make sure changes to the code implements new functionality correctly as well as does not adversely impact previously implemented functionality. However unit testing alone can not be used for Quality Assurance purposes, so other approches are also used in conjuction.
+
+A General Software Testint process involves following steps,
+1. Understanding testing requirements and setting quality goals.
+2. Building a test strategy to meet all the requirements and goals.
+3. Planning to implement the test strategy including test case creation.
+4. Test execution which involves executing test cases and reporting errors. This step is performed many times until desired quality is achieved.
+5. Release. In release stage the software application is released to the users along with report of all the known issues and bugs.
+
+References:
+1. https://www.tutorialspoint.com/software_testing/software_testing_quick_guide.htm
+2. https://reqtest.com/testing-blog/the-a-to-z-guide-to-the-software-testing-process/
+3. https://www.testbytes.net/blog/software-testing-process/
+4. https://en.wikipedia.org/wiki/Software_testing
+5. https://www.toolsqa.com/software-testing/test-process-in-software-testing/
+6. https://www.softwaretestinghelp.com/what-is-actual-testing-process-in-practical-or-company-environment/
+
+
+
 ```
 Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.
 ```
