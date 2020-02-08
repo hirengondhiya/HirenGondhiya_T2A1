@@ -115,6 +115,27 @@ Provide an overview and description of a standard source control process. WC 100
 
 ---
 
+In a multi-person team environment where a number of developers and other contributors are collaborating together to implement an application, the Source Control process helps to maintain the integrity of application code and other resources.
+
+The application that is used to implement the Source Control process is categorized as a Source Code Management (SCM) Application. There are two popular approaches to Source Control 
+1. Centralized and,
+2. Distributed. 
+
+In a centralized system, such as Microsoft TFS, all resources are controlled centrally and hence the user of the system is required to be connected to the SCM software to maintain the integrity of the code. 
+
+In a distributed SCM system, source control application resides at individual developer's machine and then changes are synced to a central code base as and when required.
+
+In general, standard source control process works as follows,
+1. Each Developer gets a copy of the source code from a central codebase to their local development environment.
+2. They make changes to code in their local environment.
+3. When any of a developer is ready, s/he syncs the changes back to the central codebase. If there are any conflicts due to other developer's work that was synced to the central codebase after the developer acquired its copy of the code, then the SCM system flags the conflicts. In this scenario, the developers need to collaborate together to merge the conflicting changes.
+
+References
+1. https://www.atlassian.com/git/tutorials/source-code-management
+2. https://aws.amazon.com/devops/source-control/
+3. https://www.linuxnix.com/what-is-source-code-management-or-version-control/
+4. https://www.oshyn.com/blogs/2012/06/version-control-systems-distributed-vs-centralized
+
 ## Q5
 
 Provide an overview and description of a standard software testing process. WC 100-200
