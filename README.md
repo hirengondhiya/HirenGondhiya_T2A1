@@ -200,6 +200,28 @@ Discuss common methods of protecting information and data. WC 100-200
 
 ---
 
+There are many ways of protecting information and data. These methods should be used in combination to be effective to provide maximum protection. Some of the common ways of protection are mentioned below,
+
+1. Authentication and Authorization:
+
+    Authentication and authorization are some of the most widely used methods of controlling access to information by identifying the user of the system and then determining if the user is allowed to access the underlying information.
+
+2. Encryption: 
+
+    Encryption is a way of obfuscating the data using mathematical algorithms so in case if an intruder gets access to the storage medium where data is stored, it's still not possible to comprehend what it was. For example, an authentication system stores user passwords only after encryption.
+
+3. Data backups and disaster recovery procedures
+
+    Data backups and disaster recovery procedures are other common methods of protecting information in case of failures of storage mediums.
+
+4. Physical Access Controls
+
+    Physical access controls are required to protect the servers, network and storage devices in data centers from harm and modification in order to gain unauthorized access to the data.
+
+5. Access logs & audit
+
+    By maintaining access logs and subsequently performing audits to make sure users of the systems access the sensitive information only for legitimate purposes and appropriate actions can be taken in case of compromise.
+
 ## Q8
 
 Research what your legal obligations are in relation to handling user data. WC 100-200
