@@ -222,6 +222,12 @@ There are many ways of protecting information and data. These methods should be 
 
     By maintaining access logs and subsequently performing audits to make sure users of the systems access the sensitive information only for legitimate purposes and appropriate actions can be taken in case of compromise.
 
+References:
+- https://safecomputing.umich.edu/information-security-requirements
+- https://en.wikipedia.org/wiki/Information_security
+- https://searchinform.com/infosec-blog/2019/11/06/data-protection/methods-to-protect-information/
+
+
 ## Q8
 
 Research what your legal obligations are in relation to handling user data. WC 100-200
@@ -237,6 +243,15 @@ Act 1988 governs the principles that must be applied by business entities while 
 
 European GDPR law is another law that applies globally to any business that collects data relating to any individual from a member country of European Union. The act also provides certain rights to the users which must be always respected while collecting private information.
 
+References:
+- https://www.oaic.gov.au/privacy/notifiable-data-breaches/
+- https://www.legislation.gov.au/Details/C2017A00012
+- https://www.mondaq.com/australia/Privacy/675064/New-Australian-mandatory-data-breach-laws
+- https://www.oaic.gov.au/privacy/guidance-and-advice/guide-to-data-analytics-and-the-australian-privacy-principles/
+- https://www.acnc.gov.au/tools/guides/managing-peoples-information-and-data
+- https://iclg.com/practice-areas/data-protection-laws-and-regulations/australia
+- https://www.websolutionz.com.au/blog/data-privacy-what-are-your-obligations-in-australia
+
 ```
 ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement.
 ```
@@ -246,6 +261,27 @@ ACME Corporation has specifically requested the app to be based on a relational 
 Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. WC 100-200
 
 ---
+
+In a relational database model information is logically structured two-dimensionally in form of rows (also called tuples) and columns (also called attributes) of a table.
+
+Each row in a table also called a tuple, represents the relationship between the set of values in the row. This relationship of values in each row often defines an entity in the real world. A table in the relational database model is also called a relation since its a collection of relationships among the set of values in each tuple.
+
+Each column in the Relations can have a value from a specific set of values. This is called domain of the attributes.
+
+The primary key in a Relation is a set of values in one or many columns of the row that can be used to uniquely identify each row in a table.
+
+The relationship between two tables is represented by including the primary key of a table into another table where it is called the Foreign Key. Each value in a foreign key column points the related row in another table from where the foreign key is included.
+
+
+References:
+- https://www2.cs.sfu.ca/CourseCentral/354/zaiane/material/notes/Chapter3/node2.html
+- https://www.relationaldbdesign.com/relational-database-design/module2/intro-relational-database-structure.php
+- https://dondi.lmu.build/share/db/relational1.pdf
+- http://www.padakuu.com/article/307-structure-of-relational-databases
+- https://www.guru99.com/relational-data-model-dbms.html
+- https://beginnersbook.com/2015/04/foreign-key-in-dbms/
+
+
 
 ## Q10
 
