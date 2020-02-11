@@ -228,6 +228,15 @@ Research what your legal obligations are in relation to handling user data. WC 1
 
 ---
 
+In the context of individuals, private information is defined as any information relating to a person that can be used to identify the person.
+
+As a business collecting and processing an individual's (employees, clients, or any other party) information, to provide benefits, services or any other purposes, has obligations to store and process the data lawfully and fairly.
+
+In Australia, Australian Privacy 
+Act 1988 governs the principles that must be applied by business entities while collecting, storing and using an individual's private information. Without going in many details there are 13 APPs (Australian Privacy Principles) that businesses need to consider while collecting, processing and deleting individual's private information. 
+
+European GDPR law is another law that applies globally to any business that collects data relating to any individual from a member country of European Union. The act also provides certain rights to the users which must be always respected while collecting private information.
+
 ```
 ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement.
 ```
