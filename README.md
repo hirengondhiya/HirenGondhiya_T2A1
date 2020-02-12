@@ -289,6 +289,37 @@ Describe the integrity aspects of the relational database model. Your descriptio
 
 ---
 
+Data integrity refers to the consistency, accuracy, and reliability of data over its lifecycle. This means that data stored in a database system right from creation to its disposal should be constantly in the correct state. 
+
+There are four types of data integrity
+1. Domain Integrity:
+    Domain integrity means each value for a column in the row of a relational database table must conform to its domain.
+
+    Relational databases enforce domain integrity using data types. While creating a table in the database for each column the data type must be declared and then while creating a new row each value must conform to the data type of the column.
+
+2. Entity Integrity: 
+
+    Entity integrity means each instance of an entity stored by the database system should be uniquely identifiable using its primary key.
+
+    Relational database systems enforce this by imposing primary key constraints. Each table in a relational database must have a primary key and the primary key constraint make sure that each value in the primary key column is not null and unique across the table.
+3. Referential Integrity:
+
+    Referential Integrity means each related row referenced by foreign key value in a table must be a valid primary key value of related table or it must be null which means that the row is not associated with any other row in the referenced table.
+
+    Relation databases enforce Referential integrity by not allowing the deletion of rows which are referenced by foreign key of another table.
+4. User-defined Integrity:
+
+    Attributes of real-world Entities have more specific domains and sometimes the domain is dynamic for example for a Booking entity ToDate must be later than FromDate of Booking, but FromDate can be any future date. In both of these cases, User-defined integrity is required since the Domain constraints are not enough to maintain the data integrity of the real world complex attributes. 
+
+    Relational databases enforce User-defined Integrity using (user-defined) key constraints.
+
+References:
+- https://en.wikipedia.org/wiki/Data_integrity
+- https://www.talend.com/resources/what-is-data-integrity/
+- https://www.veracode.com/blog/2012/05/what-is-data-integrity
+- http://www.geeksengine.com/database/design/data-integrity.php
+- https://www.javatpoint.com/dbms-integrity-constraints
+- http://www.databasedev.co.uk/data-integrity.html
 ## Q11
 
 Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. WC 100-200
