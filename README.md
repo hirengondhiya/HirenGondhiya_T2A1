@@ -326,6 +326,19 @@ Describe the manipulative aspects of the relational database model. Your descrip
 
 ---
 
+The Structured Query Language commonly referred by its short-form SQL is a language that is used to manipulate data in relational databases. It provides a standard structure to interact with relational database systems.
+
+SQL statements can be used to manipulate the databases at different levels however the statements described below are mainly used to manipulate the data that is stored in tables.
+
+1. INSERT:
+    The INSERT statement is used to add a new row in a table.
+2. SELECT:
+    The SELECT statement is used to retrieve the existing rows from the table(s).
+3. UPDATE:
+    The UPDATE statement is used to update the existing row(s) in a table.
+4. DELETE:
+    The DELETE statement is used to remove one or more rows from a table.
+
 ```
 The efficiency of an app (i.e. site) and the algorithms used are of the utmost importance. The next set of questions relate to this RfQ-requirement.
 ```
